@@ -1,0 +1,114 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{cbbdaf99-d63f-4b4b-9f18-37a65d55c33c}",
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "One Dark",
+            "font": 
+            {
+                "face": "Fira Code",
+                "size": 13
+            },
+            "historySize": 9001,
+            "startingDirectory": "."
+        },
+        "list": 
+        [
+            {
+                "commandline": "cmd.exe \"/K\" %CMD_CONFIG_PATH%\\terminal_env\\activate.bat 0",
+                "guid": "{cbbdaf99-d63f-4b4b-9f18-37a65d55c33b}",
+                "hidden": false,
+                "icon": "%CMD_CONFIG_PATH%\\icons\\cmd.ico",
+                "name": "Command Prompt"
+            },
+            {
+                "commandline": "cmd.exe \"/K\" %CMD_CONFIG_PATH%\\terminal_env\\activate.bat 1",
+                "guid": "{cbbdaf99-d63f-4b4b-9f18-37a65d55c33c}",
+                "hidden": false,
+                "icon": "%CMD_CONFIG_PATH%\\icons\\anaconda.ico",
+                "name": "Anaconda"
+            },
+            {
+                "commandline": "cmd.exe \"/K\" \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\VsDevCmd.bat\"",
+                "guid": "{ee877fbc-abce-4622-bd09-c0a452921550}",
+                "hidden": false,
+                "name": "Developer Command Prompt VS 2022"
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": true,
+                "name": "Command Prompt"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#282C34",
+            "black": "#3F4451",
+            "blue": "#4AA5F0",
+            "brightBlack": "#4F5666",
+            "brightBlue": "#4DC4FF",
+            "brightCyan": "#4CD1E0",
+            "brightGreen": "#A5E075",
+            "brightPurple": "#DE73FF",
+            "brightRed": "#FF616E",
+            "brightWhite": "#D7DAE0",
+            "brightYellow": "#F0A45D",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#42B3C2",
+            "foreground": "#ABB2BF",
+            "green": "#8CC265",
+            "name": "One Dark",
+            "purple": "#C162DE",
+            "red": "#E05561",
+            "selectionBackground": "#ABB2BF",
+            "white": "#E6E6E6",
+            "yellow": "#D18F52"
+        }
+    ]
+}
