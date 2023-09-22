@@ -1,4 +1,4 @@
 @echo off
 
-doskey ls=exa -l
-doskey lt=exa -lT
+doskey ls=eza -l
+doskey lt=eza -lT
